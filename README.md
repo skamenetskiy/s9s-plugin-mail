@@ -1,4 +1,6 @@
 # s9s-plugin-mail
+![Dependencies](https://david-dm.org/skamenetskiy/s9s-plugin-mail.svg)
+
 Mail plugin for ClusterControl by @Severalnines
 
 ### Installation
