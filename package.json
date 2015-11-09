@@ -1,6 +1,6 @@
 {
   "name": "s9s-plugin-mail",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Severalnines mail plugin for s9s-clustercontrol-service.",
   "main": "index.js",
   "scripts": {
