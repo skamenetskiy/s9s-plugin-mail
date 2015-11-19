@@ -1,6 +1,6 @@
 {
   "name": "s9s-plugin-mail",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Severalnines mail plugin for s9s-clustercontrol-service.",
   "main": "index.js",
   "repository":"git@github.com:skamenetskiy/s9s-plugin-mail.git",
