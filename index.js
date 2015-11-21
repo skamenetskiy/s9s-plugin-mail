@@ -13,8 +13,8 @@ hbs.registerHelper('stringify', function(item) {
         return ''
     }
 });
-var html = hbs.compile(fs.readFileSync('./templates/html/mail.hbs', 'utf8')),
-    text = hbs.compile(fs.readFileSync('./templates/text/mail.hbs', 'utf8'));
+var html = hbs.compile(fs.readFileSync(__dirname + '/templates/html/mail.hbs', 'utf8')),
+    text = hbs.compile(fs.readFileSync(__dirname + '/templates/text/mail.hbs', 'utf8'));
 plugins.advisers.register('mail', function(config, data) {
     if (data instanceof Array) {
         data.forEach(function(item) {
@@ -34,7 +34,7 @@ plugins.advisers.register('mail', function(config, data) {
                     message.details = item.details;
                 }
                 if (item.contexts) {
-                    message.contexts = items.contexts;
+                    message.contexts = item.contexts;
                 }
                 var options = {
                     subject: subject,
