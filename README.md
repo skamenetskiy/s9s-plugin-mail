@@ -8,10 +8,11 @@ Mail plugin for ClusterControl by @Severalnines
 Using plugins installer:
 ```bash
 cd /path/to/cluster-control/nodejs/service
-./plugins --install mail
+./plugins.js --install mail
 ```
 or using npm:
 ```bash
 cd /path/to/cluster-control/nodejs/service
 npm install s9s-plugin-mail
 ```
+
