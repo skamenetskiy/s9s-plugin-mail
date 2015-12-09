@@ -48,6 +48,7 @@ More information on the ```details``` and the ```contexts``` can be found [here]
 	"alarm_id":123,
 	"alarm_name":"Short alarm name",
 	"alarm_description":"Long description (1024 chars max)",
+	"cluster_id":1,
 	"client":"node-1",
 	"url":"http://127.0.0.1/clustercontrol/",
 	"details": {
