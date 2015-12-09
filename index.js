@@ -23,13 +23,13 @@ plugins.advisers.register('mail', function(config, data) {
                     throw new Error('`to` is undefined or not an Array');
                 }
                 var subject = 'ClusterControl Adviser Alert: ' + item.client + '/' + item.alarm_id,
-                message = {
-                    subject: subject,
-                    name: item.alarm_name,
-                    description: item.alarm_description,
-                    client: item.client || 'ClusterControl',
-                    url: item.url || 'http://www.severalnines.com'
-                };
+                    message = {
+                        subject: subject,
+                        name: item.alarm_name,
+                        description: item.alarm_description,
+                        client: item.client || 'ClusterControl',
+                        url: item.url || 'http://www.severalnines.com'
+                    };
                 if (item.details) {
                     message.details = item.details;
                 }
@@ -43,7 +43,7 @@ plugins.advisers.register('mail', function(config, data) {
                 };
                 config.to.forEach(function(to) {
                     options.to = to;
-                    mail.send(options);
+                    mail.send(options, item.cluster_id || undefined);
                 });
             } catch (error) {
                 logger.warning('Mail: ' + error.message);

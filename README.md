@@ -33,6 +33,8 @@ More information on the ```details``` and the ```contexts``` can be found [here]
 
 ```alarm_description``` - **string** (*required*) description of the alarm, max 1024 chars.
 
+```cluster_id``` - **int** (*required*) affected cluster ID.
+
 ```client``` - **string** (*required*) alarm client (*"node-1" for example*).
 
 ```url``` - **string** (*required*) url to ClusterControl page (*to view the alarm*).
